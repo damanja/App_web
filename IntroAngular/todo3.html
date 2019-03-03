@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html ng-app="todoApp">
+    <head>
+        <title>Compteur Sauvegardé</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <link rel='stylesheet' type='text/css' media='screen' href='./CSS/style.css'/>
+    </head>
+    <body ng-controller="TodoCtrl">
+        <form ng-submit="addTask()">
+            Ajouter task: <input type="text" ng-model="taskName"/>
+            <input type="submit" value="ajouter">
+        </form>
+        <br/>
+        <br/>
+        <div ng-repeat = "ta in taskSet">
+            <input type="checkbox" ng-click="checkTask(ta.taskName)">  
+            <span class="fait">{{ ta.taskName }} </span>
+           
+           <!--  -->
+        </div>
+    </body>
+    <script src = "https://ajax.googleapis.com/ajax/libs/angularjs/1.6.6/angular.min.js"></script>
+    <script src = "Javascript/todo3.js"> </script>
+    
+</html>

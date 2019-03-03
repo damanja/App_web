@@ -1,0 +1,7 @@
+span.fait{
+    text-decoration: line-through;
+}
+
+span.unfait{
+    text-decoration: none;
+}
